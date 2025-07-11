@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', sans-serif;
+}
+
+body{
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  background-color: white;
+  width: 360px;
+  border-radius: 15px;
+  padding: 24px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.9),
+              -1px -1px 0px rgba(0, 0, 0, 0.9),
+              0.5px 0.5px 0px rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+img{
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+
+.learn{
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 10%);
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.p1{
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: hsl(0, 0%, 30%);
+}
+h2{
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: hsl(0, 0%, 15%);
+}
+
+.p2{
+  font-size: 16px;
+  line-height: 1.3;
+  color: hsl(0, 0%, 42%);
+}
+
+.image2{
+  display: flex;
+  align-items: center;
+}
+
+.img2{
+    margin-top: 25px;
+  border-radius: 50%;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.h44{
+  margin-top: 10px;
+  font-size: 16px;
+  color: hsl(0, 0%, 15%);
+  font-weight: 750;
+  line-height: 1;
+}
+
+/* 🔥 Fiery Passion Theme */
+body.theme-red {
+  background-color: #ff595e;
+}
+
+body.theme-red .card {
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(255, 90, 94, 0.3);
+}
+
+body.theme-red .learn {
+  background-color: #ffb703;
+  color: #000;
+}
+
+body.theme-red h2 {
+  color: #d62828;
+}
+
+body.theme-red .p2 {
+  color: #6c757d;
+}
+
+body.theme-red .p1,
+body.theme-red .h44 {
+  color: #333;
+}
+
+/* 🖤 Dark Luxe Theme */
+body.theme-dark {
+  background-color: #1c1c1c;
+}
+
+body.theme-dark .card {
+  background: #2c2c2c;
+  color: #f8f9fa;
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.15);
+}
+
+body.theme-dark .learn {
+  background-color: #ffd700;
+  color: #000;
+}
+
+body.theme-dark h2 {
+  color: #ffffff;
+}
+
+body.theme-dark .p2 {
+  color: #cccccc;
+}
+
+body.theme-dark .p1,
+body.theme-dark .h44 {
+  color: #dddddd;
+}
+
+/* 🌅 Sunset Heat Theme */
+body.theme-sunset {
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff6a88 50%, #ff99ac 100%);
+}
+
+body.theme-sunset .card {
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(255, 106, 136, 0.3);
+}
+
+body.theme-sunset .learn {
+  background-color: #ff6a88;
+  color: #ffffff;
+}
+
+body.theme-sunset h2 {
+  color: #ff477e;
+}
+
+body.theme-sunset .p2 {
+  color: #4f4f4f;
+}
+
+body.theme-sunset .p1,
+body.theme-sunset .h44 {
+  color: #2c2c2c;
+}
+
+body.theme-cyberpunk {
+  background: linear-gradient(to right, #2d0036, #0d0221);
+}
+
+body.theme-cyberpunk .card {
+  background: #1a1a2e;
+  box-shadow: 0 0 20px rgba(0, 255, 195, 0.4);
+  color: #fff;
+}
+
+body.theme-cyberpunk .learn {
+  background-color: #00ffc3;
+  color: #000;
+}
+
+body.theme-cyberpunk h2 {
+  color: #e94560;
+}
+
+body.theme-cyberpunk .p2 {
+  color: #c1c1c1;
+}
+
+body.theme-cyberpunk .p1,
+body.theme-cyberpunk .h44 {
+  color: #f4f4f4;
+}
+
+body.theme-mint {
+  background-color: #d2f8d2;
+}
+
+body.theme-mint .card {
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(100, 200, 150, 0.3);
+  color: #1a3d1a;
+}
+
+body.theme-mint .learn {
+  background-color: #9ae19d;
+  color: #053a05;
+}
+
+body.theme-mint h2 {
+  color: #26734d;
+}
+
+body.theme-mint .p2 {
+  color: #3e5e3e;
+}
+
+body.theme-mint .p1,
+body.theme-mint .h44 {
+  color: #1d3b1d;
+}
+
+
+.theme-buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.theme-buttons button {
+  padding: 8px 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theme-buttons button:hover {
+  transform: scale(1.05);
+  background-color: #555;
+}

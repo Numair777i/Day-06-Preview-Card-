@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project-8-Themer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+</style>
+<link rel="icon" href="favicon-32x32.png">
+</head>
+<script>
+  function setTheme(themeName) {
+    document.body.className = themeName;
+    localStorage.setItem('preferredTheme', themeName);
+  }
+
+  window.onload = () => {
+    const savedTheme = localStorage.getItem('preferredTheme');
+    if (savedTheme) {
+      document.body.className = savedTheme;
+    }
+  };
+</script>
+
+<body>
+  <div class="theme-buttons">
+  <button onclick="setTheme('theme-yellow')">📒 Yellow</button>
+  <button onclick="setTheme('theme-red')">🔥 Red</button>
+  <button onclick="setTheme('theme-dark')">🖤 Dark</button>
+  <button onclick="setTheme('theme-sunset')">🌅 Sunset</button>
+  <button onclick="setTheme('theme-cyberpunk')">🌌 Cyberpunk</button>
+  <button onclick="setTheme('theme-mint')">🌿 Mint</button>
+</div>
+
+  <div class="container">
+    <div class="card">
+      <div class="image">
+        <img src="illustration-article.svg" alt="">
+      </div>
+      <div class="learn">
+          <h4>Learning</4>
+      </div>
+      <p class="p1">
+        Published 21 Dec 2023
+      </p>
+      <h2>HTML & CSS foundations</h2>
+      <p class="p2">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="image2">
+        <img class="img2" src="image-avatar.webp" alt="">
+        <span class="h44">Greg Hooper</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
